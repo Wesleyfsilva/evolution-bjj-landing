@@ -1,5 +1,7 @@
 import React from 'react';
 import Instructor from './components/Instructor';
+import Schedule from './components/Schedule'; // Adicione a importação
+import ContactForm from './components/ContactForm';
 import './App.css';
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       
       <main>
         <Instructor />
+        <Schedule /> {/* Adicione o componente aqui */}
+        <ContactForm />
       </main>
 
       <footer style={{ padding: '20px', textAlign: 'center', background: '#000', color: '#888' }}>
