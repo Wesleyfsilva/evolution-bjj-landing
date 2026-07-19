@@ -1,24 +1,21 @@
 import React from 'react';
+import Navbar from './components/NavBar';
 import Instructor from './components/Instructor';
 import Schedule from './components/Schedule';
 import ContactForm from './components/ContactForm';
-import Footer from './components/Footer'; // Importe o novo Footer
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header style={{ padding: '20px', textAlign: 'center', background: '#000', color: '#fff' }}>
-        <h1>Studio Evolution BJJ</h1>
-      </header>
-      
+      <Navbar />
       <main>
-        <Instructor />
-        <Schedule />
-        <ContactForm />
+        <section id="instrutor"><Instructor /></section>
+        <section id="horarios"><Schedule /></section>
+        <section id="contato"><ContactForm /></section>
       </main>
-
-      <Footer /> {/* Utilize o componente Footer */}
+      <Footer />
     </div>
   );
 }
